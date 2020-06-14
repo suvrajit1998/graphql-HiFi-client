@@ -20,3 +20,10 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+@media only screen and (max-width: 490px) {
+  .ui[class*='three column'].grid > .column:not(.row),
+  .ui[class*='three column'].grid > .row > .column {
+    width: 100%;
+  }
+}
